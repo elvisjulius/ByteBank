@@ -16,6 +16,12 @@ public class TestaMetodo {
 		contaDaStefany.transfere(300, contaDoElvis);
 		System.out.println(contaDaStefany.saldo);
 		System.out.println(contaDoElvis.saldo);
+		
+		contaDaStefany.titular = "Stefany Cristina";
+		contaDoElvis.titular = "Elvis Julius";
+		
+		System.out.println(contaDaStefany.titular);
+		System.out.println(contaDoElvis.titular);
 	}
 
 }

@@ -24,4 +24,21 @@ public class Conta {
 
 		}
 	}
+
+	public boolean transfere(double valor, Conta destino) {
+
+		if (this.saldo >= valor) {
+			this.saldo -= valor;
+			destino.deposita(valor);
+			System.out.println("Você transferiu "+ valor + " reais ");
+			return true;
+
+		} else {
+			System.out.println(
+					"Você não tem Saldo Suficiente para fazer esta transferência, seu saldo é de: " + this.saldo);
+			return false;
+
+		}
+
+	}
 }

@@ -7,8 +7,15 @@ public class TestaMetodo {
 		contaDoElvis.deposita(50);
 		System.out.println(contaDoElvis.saldo);
 
-		boolean conseguiuRetirar = contaDoElvis.saca(150);
+		boolean conseguiuRetirar = contaDoElvis.saca(50);
 		System.out.println(conseguiuRetirar);
+		
+		Conta contaDaStefany = new Conta();
+		contaDaStefany.deposita(1000);
+		
+		contaDaStefany.transfere(300, contaDoElvis);
+		System.out.println(contaDaStefany.saldo);
+		System.out.println(contaDoElvis.saldo);
 	}
 
 }

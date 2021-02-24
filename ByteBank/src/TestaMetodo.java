@@ -5,7 +5,10 @@ public class TestaMetodo {
 		Conta contaDoElvis = new Conta();
 		contaDoElvis.saldo = 100;
 		contaDoElvis.deposita(50);
-System.out.println(contaDoElvis.saldo);
+		System.out.println(contaDoElvis.saldo);
+
+		boolean conseguiuRetirar = contaDoElvis.saca(150);
+		System.out.println(conseguiuRetirar);
 	}
 
-}	
+}

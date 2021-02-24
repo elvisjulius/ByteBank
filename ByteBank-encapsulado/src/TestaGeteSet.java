@@ -2,7 +2,7 @@
 public class TestaGeteSet {
 
 	public static void main(String[] args) {
-		Conta conta = new Conta();
+		Conta conta = new Conta(3181,6222);
 		conta.setNumero(1337);
 		System.out.println(conta.getNumero());
 		Cliente elvis = new Cliente();

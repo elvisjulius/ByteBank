@@ -1,12 +1,23 @@
 
 public class Conta {
 
+	public static int getTotal() {
+		return Conta.total;
+	}
+
+	public static void setTotal(int total) {
+		Conta.total = total;
+	}
+
 	private double saldo;
 	private int agencia;
 	private int numero;
 	private Cliente titular;
+	private static int total;
 
 	public Conta(int agencia, int numero) {
+		total++;
+		
 		this.agencia = agencia;
 		this.numero = numero;
 		System.out.println("estou criando uma conta "+ this.numero);
